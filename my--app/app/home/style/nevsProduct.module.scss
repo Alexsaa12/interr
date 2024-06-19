@@ -1,0 +1,73 @@
+.container {
+    margin-top: 20px;
+    // color: gold;
+    // text-align: center;
+    background: url('/img/bucp1.png') no-repeat center center;
+    background-size: cover;
+    padding: 46px;
+  }
+  .title_hidn{
+    font-size: 21px;
+    text-align: center;
+    color: gold;
+  }
+  .publication {
+    display: flex;
+    // align-items: center;
+    margin: 20px 0;
+
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .image {
+    margin-right: 20px;
+  }
+  .details {
+    color: white;
+  }
+  .text {
+    width: 200px;
+    color: rgb(255, 255, 255);
+  }
+  .title {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .publication {
+        align-items: center;
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .publication .image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .publication {
+      padding: 5px;
+    }
+  
+    .container .title_hidn {
+      font-size: 20px;
+    }
+  
+    .publication .details .text {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .publication .details  {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+  }
